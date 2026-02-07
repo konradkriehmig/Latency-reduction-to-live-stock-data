@@ -1,4 +1,4 @@
-# Low-Latency Trading System
+# Low-Latency Trading System, what it does?
 
 I deployed a high-performance VM as close as I can to the NYSE.
 
@@ -14,10 +14,20 @@ I have high computing power in my VM that is useful for intensive backtesting (t
 ## Infrastructure 
 ![Built in Azure](./assets/infra.png)
 
-## Setup
-```bash
-pip install -r requirements.txt
-export ALPACA_API_KEY="your-key"
-export ALPACA_SECRET_KEY="your-secret"
-python dataFetcher.py
-```
+Can you be faster than me? :) --> if you want to try:
+
+# Setup
+
+0. go to Alpaca, create account, get API keys for paper trading from your dashboard
+1. clone repo in VS code
+2. in VS terminal bash: pip install -r requirements.txt
+3. in VS terminal bash:
+   $env:ALPACA_API_KEY="your-key-here"
+   $env:ALPACA_SECRET_KEY="your-secret-here"
+5. go
+   
+##Prerequisits:
+- Python 3.12+
+- Azure account (for VM deployment)
+- Alpaca Markets account (free paper trading account)
+
