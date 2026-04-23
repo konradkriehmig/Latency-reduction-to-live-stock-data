@@ -1,10 +1,6 @@
 # Low-Latency Trading System, what it does:
 
-I deployed a high-performance VM as close as I can to the NYSE.
-
-1. The physical proximity is what makes my ping faster than yours if you are not in US east.
-
-2. I have high computing power in my VM that is useful for intensive backtesting later.
+I deployed a high-performance VM as close as I can to the NYSE. The physical proximity is what makes my ping faster than my local device that is located in Ireland.
 
 ## Latency Results (pings)
 - **My Laptop (Dublin) → S&P data**: 81ms average
@@ -15,7 +11,7 @@ My Laptop:
 
 ![asdf3](./assets/preview3.png)
 
-My new fast Machine:
+Azure Machine:
 
 <img width="811" height="591" alt="image" src="https://github.com/user-attachments/assets/24f838b1-94a6-41a9-9f16-a866d8d2dc70" />
 
@@ -23,17 +19,13 @@ My new fast Machine:
 ## Infrastructure 
 ![Built in Azure](./assets/infra.png)
 
-Can you be faster than me? --> if you want to try:
 
 # Setup
-
-1. go to Alpaca, create account, get API keys for paper trading from your dashboard
+1. create Alpaca account for live stock data, get API keys for paper trading from your dashboard
 2. clone repo in VS code
 3. in VS terminal bash: pip install -r requirements.txt
 4. in VS terminal bash:
    $env:ALPACA_API_KEY="your-key-here"
    $env:ALPACA_SECRET_KEY="your-secret-here"
-5. go
-
-Easy :)
+5. test ping time
 
